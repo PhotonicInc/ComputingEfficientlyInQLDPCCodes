@@ -22,8 +22,8 @@ The working directory contains two folders 'stim_circuits' and 'figure_raw_data'
 
 The 'stim_circuits' folder contains subdirectories containing the stim circuits
 used for simulating a particular code family (shyps or surface), code size ('r' parameter for shyps and distance for surface), and configuration (memory or logic).
-The circuits themselves are named according to this convention along with the physical error probability of the noise they include. The convention is '<code_family>_<code_size>_<configuration>_simulation_p_<noise_level_value>.stim'. For example, the circuit for a distance 3 surface code memory simulation at a
-physical error_probability of p=0.001 would be named 'surface_code_distance3_memory_simulation_circuit_p_0.001.stim'. The 'stim_circuits' folder also includes
+The circuits themselves are named according to this convention along with the physical error probability of the noise they include. The convention is '\<code_family\>_\<code_size\>_\<configuration\>_simulation_p_\<noise_level_value\>.stim'. For example, the circuit for a distance 3 surface code memory simulation at a
+hysical error_probability of p=0.001 would be named 'surface_code_distance3_memory_simulation_circuit_p_0.001.stim'. The 'stim_circuits' folder also includes
 a python script called 'reading_stim_circuits.py' that can be used to import our stim circuits to python. The simulations that produced Figures 1, 2, 5, and 6 of 
 the paper can be recreated with the circuits in the 'stim_circuits' directory.
 
