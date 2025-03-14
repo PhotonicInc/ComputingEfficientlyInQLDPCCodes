@@ -29,7 +29,7 @@ The 'figure_raw_data' folder contains the CSV files of the simulation results us
 ## Attribution
 
 If you use this data in your research, please cite as follows:
-
+```
 @misc{malcolm2025computingefficientlyqldpccodes,
       title={Computing Efficiently in QLDPC Codes}, 
       author={Alexander J. Malcolm and Andrew N. Glaudell and Patricio Fuentes and Daryus Chandra and Alexis Schotte and Colby DeLisle and Rafael Haenel and Amir Ebrahimi and Joschka Roffe and Armanda O. Quintavalle and Stefanie J. Beale and Nicholas R. Lee-Hone and Stephanie Simmons},
@@ -39,3 +39,4 @@ If you use this data in your research, please cite as follows:
       primaryClass={quant-ph},
       url={https://arxiv.org/abs/2502.07150}, 
 }
+```
