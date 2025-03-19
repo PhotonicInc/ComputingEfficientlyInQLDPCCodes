@@ -26,6 +26,22 @@ physical error_probability of `p=0.001` would be named `surface_code_distance4_m
 
 The `figure_raw_data` folder contains the CSV files of the simulation results used to generate the logical error rate plots shown in Figures 1, 2, 5, and 6. Each file includes data corresponding to the physical error rate (`physical_error_rate`), the number of shots (`num_shots`), and the number of errors (`num_errors`). The observed logical error rate is defined as the ratio of num_errors to num_shots. For further details on how the logical error rates per syndrome extraction round are computed, as well as how the error bars are derived from the observed logical error rates, please refer to the Appendix of the paper.
 
+## System Requirements
+
+### Hardware Requirements
+
+Loading the `stim` cicuits included in this repository requires only a standard computer with enough RAM to support the operations defined by a user. For minimal performance, this will be a computer with about 2 GB of RAM. Running Monte Carlo simulations of the circuits we provide requires more performant hardware. For simple testing and quantum memory simulations a computer with 16 GB of RAM and 4 cores with 1.8 GHz/core will be sufficient. To run simulations of logic using the circuits in `src/stim_circuits/shyps_r3_logic_circuits` in a reasonable amount of time (1-3 days) we recommend a machine with at least 32 GB of RAM and 16+ cores and 1.8 GHz/core.
+
+### Software Requirements
+
+The code contained in this repository has been tested on a *Windows*-11 Business operating system. It should also be compatible with Mac and Linux operating systems.
+
+## Software Dependencies
+
+The code contained in this repository can be run with a working version of python and `stim` (https://github.com/quantumlib/stim). 
+
+Stim can be installed into a python 3 environment using pip: `pip install stim`.
+
 ## Attribution
 
 If you use this data in your research, please cite as follows:
