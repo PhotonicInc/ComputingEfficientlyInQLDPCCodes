@@ -12,19 +12,19 @@ It is the prevailing belief that quantum error correcting techniques will be req
     │   ├── shyps_r3_logic_circuits                 # stim circuits for the logic simulations of the [49, 9, 4] SHYPS code
     │   ├── shyps_r3_memory_circuits                # stim circuits for the memory simulations of the [49, 9, 4] SHYPS code
     │   ├── shyps_r4_memory_circuits                # stim circuits for the memory simulations of the [225, 16, 8] SHYPS code
-    │   ├── surface_code_d4_memory_circuits         # stim circuits for the memory simulations of the distance-4 surface code
-    │   ├── surface_code_d8_memory_circuits         # stim circuits for the memory simulations of the distance-8 surface code
+    │   ├── rotated_surface_code_d3_circuits         # stim circuits for the memory simulations of the distance-3 rotated surface code
+    │   ├── rotated_surface_code_d7_circuits         # stim circuits for the memory simulations of the distance-7 rotated surface code
     │   └── reading_stim_circuits.py                # python file to load stim circuits
     │
-    └── figure_raw_data                             # raw data to reproduce the figures from the paper
+    └── raw_figure_data                             # raw data to reproduce the figures from the paper
 
 The working directory contains two folders `stim_circuits` and `figure_raw_data`.
 
 The `stim_circuits` folder contains subdirectories containing the stim circuits used for simulating a particular code family (shyps or surface), code size ('r' parameter for shyps and distance for surface), number of codeblocks (this is only used for circuits implementing SHYPS codes), configuration (memory or logic), and types of detectors present in the circuit (this is only used for circuits implementing SHYPS codes).
-The circuits themselves are named according to this convention along with the physical error probability of the noise they include. For example, the circuit for a distance 4 surface code memory simulation at a
-physical error_probability of `p=0.001` would be named `surface_code_distance4_memory_simulation_circuit_p_0.001.stim`. Alternatively, the memory circuit for a [[49, 9, 4]] SHYPS code that uses only Z detectors for that same value of the physical error probability would be named `shyps_r3_one_codeblock_distance4_memory_simulation_Z_detectors_circuit_p_0.001.stim`. The `stim_circuits` folder also includes a python script called `reading_stim_circuits.py` that can be used to import our stim circuits to python. The simulations that produced Figures 1, 2, 5, and 6 of the paper can be recreated with the circuits in the `stim_circuits` directory.
+The circuits themselves are named according to this convention along with the physical error probability of the noise they include. For example, the circuit for a distance 3 rotated surface code memory simulation at a
+physical error_probability of `p=0.001` would be named `rotated_surface_code_distance3_memory_simulation_circuit_p_0.001.stim`. Alternatively, the memory circuit for a [[49, 9, 4]] SHYPS code that uses only Z detectors for that same value of the physical error probability would be named `shyps_r3_one_codeblock_distance4_memory_simulation_Z_detectors_circuit_p_0.001.stim`. The `stim_circuits` folder also includes a python script called `reading_stim_circuits.py` that can be used to import our stim circuits to python. The simulations that produced Figures 2 and 3 of the manuscript and Figures 3 and 4 of the supplementary material can be recreated with the circuits in the `stim_circuits` directory.
 
-The `figure_raw_data` folder contains the CSV files of the simulation results used to generate the logical error rate plots shown in Figures 1, 2, 5, and 6. Each file includes data corresponding to the physical error rate (`physical_error_rate`), the number of shots (`num_shots`), and the number of errors (`num_errors`). The observed logical error rate is defined as the ratio of num_errors to num_shots. For further details on how the logical error rates per syndrome extraction round are computed, as well as how the error bars are derived from the observed logical error rates, please refer to the Appendix of the paper.
+The `figure_raw_data` folder contains the CSV files of the simulation results used to generate the logical error rate plots shown in Figures 2 and 3 of the manuscript and Figures 3 and 4 of the supplementary material. Each file includes data corresponding to the physical error rate (`physical_error_rate`), the number of shots (`num_shots`), and the number of errors (`num_errors`). The observed logical error rate is defined as the ratio of num_errors to num_shots. For further details on how the logical error rates per syndrome extraction round are computed, as well as how the error bars are derived from the observed logical error rates, please refer to the Appendix of the paper.
 
 ## System Requirements
 
