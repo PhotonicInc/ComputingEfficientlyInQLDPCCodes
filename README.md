@@ -12,11 +12,12 @@ It is the prevailing belief that quantum error correcting techniques will be req
     │   ├── shyps_r3_logic_circuits                 # stim circuits for the logic simulations of the [49, 9, 4] SHYPS code
     │   ├── shyps_r3_memory_circuits                # stim circuits for the memory simulations of the [49, 9, 4] SHYPS code
     │   ├── shyps_r4_memory_circuits                # stim circuits for the memory simulations of the [225, 16, 8] SHYPS code
-    │   ├── rotated_surface_code_d3_circuits         # stim circuits for the memory simulations of the distance-3 rotated surface code
-    │   ├── rotated_surface_code_d7_circuits         # stim circuits for the memory simulations of the distance-7 rotated surface code
+    │   ├── shyps_r5_memory_circuits                # stim circuits for the memory simulations of the [961, 25, 16] SHYPS code
+    │   ├── rotated_surface_code_d3_circuits        # stim circuits for the memory simulations of the distance-3 rotated surface code
+    │   ├── rotated_surface_code_d7_circuits        # stim circuits for the memory simulations of the distance-7 rotated surface code
     │   └── reading_stim_circuits.py                # python file to load stim circuits
     │
-    └── manuscript_figure_raw_data                             # raw data to reproduce the figures from the paper
+    └── manuscript_figure_raw_data                  # raw data to reproduce the figures from the paper
 
 The working directory contains two folders `stim_circuits` and `manuscript_figure_raw_data`.
 
